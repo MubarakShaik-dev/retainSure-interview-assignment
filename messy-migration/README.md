@@ -48,3 +48,7 @@ Before you begin, ensure you have the following software installed on your machi
 python init_db.py
 
 python app.py
+
+### for test cases
+
+pytest 

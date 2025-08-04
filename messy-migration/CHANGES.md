@@ -51,3 +51,82 @@ The original codebase had several critical vulnerabilities and design flaws:
 * **API Documentation:** Generate interactive API documentation using a tool like **Flask-Swagger-UI**.
 * **Containerization:** Add a `Dockerfile` and `docker-compose.yml` to make the application easy to deploy and run in any environment.
 * **CI/CD Pipeline:** Set up a simple CI/CD pipeline (e.g., with GitHub Actions) to automatically run tests on every push.
+
+
+
+
+🤖 AI Code Handling (Expanded)
+This section transparently describes how AI assistance was used, what code was adopted, modified, or rejected, and what human review was applied to maintain accountability and code quality.
+
+✅ Use Cases for AI Tools (ChatGPT by OpenAI):
+Use Case	Description
+Architecture Planning	Used AI to suggest best-practice Flask project structures (e.g., Blueprints, create_app(), separating routes).
+Validator Functions	Generated sample functions to validate user input (e.g., email format, password rules).
+Route Handler Templates	Drafted REST API endpoint structures (POST/GET/PUT/DELETE) following RESTful conventions.
+Error Handling Patterns	Used examples to implement Flask's @errorhandler and standard error JSON responses.
+CHANGES.md and Documentation	AI helped format this changelog with structured bullet points and summaries.
+
+✏️ AI Code Review and Customization
+Every piece of AI-generated code was manually reviewed for correctness, relevance, and security.
+
+AI suggestions were treated as drafts — no logic was copy-pasted blindly.
+
+Code was customized to match the actual app’s constraints (e.g., DB setup, input fields, Flask setup).
+
+Security-related suggestions (e.g., password hashing) were verified against official Flask/Werkzeug docs before applying.
+
+❌ What AI-Generated Code Was Rejected
+JWT auth systems (not required by task)
+
+Over-engineered user schemas or ORM migrations
+
+Full-scale Docker setups (outside the assignment scope)
+
+📌 Summary
+AI was used as a productivity tool, similar to searching Stack Overflow or reading Flask docs. Final decisions, design, and code were entirely human-curated to ensure the solution is:
+
+Aligned with the task requirements
+
+Secure and maintainable
+
+Understandable by future developers without relying on AI-generated black boxes
+
+
+
+
+
+🤖 AI Code Handling (Expanded)
+This section transparently describes how AI assistance was used, what code was adopted, modified, or rejected, and what human review was applied to maintain accountability and code quality.
+
+✅ Use Cases for AI Tools (ChatGPT by OpenAI):
+Use Case	Description
+Architecture Planning	Used AI to suggest best-practice Flask project structures (e.g., Blueprints, create_app(), separating routes).
+Validator Functions	Generated sample functions to validate user input (e.g., email format, password rules).
+Route Handler Templates	Drafted REST API endpoint structures (POST/GET/PUT/DELETE) following RESTful conventions.
+Error Handling Patterns	Used examples to implement Flask's @errorhandler and standard error JSON responses.
+CHANGES.md and Documentation	AI helped format this changelog with structured bullet points and summaries.
+
+✏️ AI Code Review and Customization
+Every piece of AI-generated code was manually reviewed for correctness, relevance, and security.
+
+AI suggestions were treated as drafts — no logic was copy-pasted blindly.
+
+Code was customized to match the actual app’s constraints (e.g., DB setup, input fields, Flask setup).
+
+Security-related suggestions (e.g., password hashing) were verified against official Flask/Werkzeug docs before applying.
+
+❌ What AI-Generated Code Was Rejected
+JWT auth systems (not required by task)
+
+Over-engineered user schemas or ORM migrations
+
+Full-scale Docker setups (outside the assignment scope)
+
+📌 Summary
+AI was used as a productivity tool, similar to searching Stack Overflow or reading Flask docs. Final decisions, design, and code were entirely human-curated to ensure the solution is:
+
+Aligned with the task requirements
+
+Secure and maintainable
+
+Understandable by future developers without relying on AI-generated black boxes

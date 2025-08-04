@@ -38,10 +38,10 @@ python -m flask --app app.main run
 # Response: {"short_code": "abc123", "short_url": "http://localhost:5000/abc123"}
 
 # Use the short URL (this redirects)
-Invoke-WebRequest -Uri http://localhost:5000/7ZM0Ww -MaximumRedirection 5
+Invoke-WebRequest -Uri http://localhost:5000/FUL2N7 -MaximumRedirection 5
 
 # Get analytics
-curl http://localhost:5000/api/stats/abc123
+curl http://localhost:5000/api/stats/FUL2N7
 
 # Response: {"url": "https://www.example.com/very/long/url", "clicks": 5, "created_at": "2024-01-01T10:00:00"}
 ```
